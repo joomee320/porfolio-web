@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joomee Choi | Personal Website</title>
+    <link rel="stylesheet" href="css/joomeestyle.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img src="img/logo.png" alt="joomee's logo" class="logo" id="main-logo">
+                <!-- Another icon for scrolling pages -->
+                <img src="img/pinklogo.png" class="logo secondlogo" id="second-logo" style="display:none;"> <!-- Initially hidden  -->
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#aboutmepage">ABOUT</a></li>
+                    <li><a href="#experiencepage">EXPERIENCE</a></li>
+                    <li><a href="#projectpage">PROJECT</a></li>
+                    <li><a href="#infom">CONTACT</a></li>
+                </ul>
+            </div>
+
+                <!-- Hamburger Menu for Mobile -->
+            <div class="hamburger">
+                <div class="bar"></div>
+            </div>
+        </div>
+
+        <!-- HOME -->
+        <section id="homepage">
+            <div class="home">
+                <div class="content">
+                    <text id="introduction">
+                        Hi, I'm Joomee Choi !
+                    </text><br><br><span>
+                        <text id="scroll">
+                            Scroll down to see more
+                        </text>
+                    </span>
+                </div>
+            </div>
+    </section>
+
+        <!-- About Me Section -->
+        <section id="aboutmepage">
+            <div class="aboutme">
+                <div class="profile">
+                    <img src="img/me.png" class="me">
+                </div>
+                <div class="description">
+                    <p class = "par">
+                        Hi, I'm Joomee, a Junior at Northeastern University majoring in Computer Science and Design.
+                        My passion lies in crafting meaningful digital experiences that bridge the gap between technology and user-centered design.
+                        <br><br>
+                        While I primarily learn CS and Desgin, I am also interested in researching human behaviour from social and cultural perspectives, enriched by my experiences living 
+                        in South Korea, New Zealand, and now the United States.
+                        <br><br>
+                        I value a driven, empathetic, and growth-oriented mindset, and I aim to contribute to creating innovative and healthy platforms in the future.
+                        <br><br>
+                        Please check out my resume, and feel free to email me at joomee320@gmail.com!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+       <!-- Experience Section -->
+        <section id="experiencepage">
+            <div class="experience">
+                    <h1 class="heading">
+                        EXPERIENCE
+                    </h1>
+            </div>
+            <div class="experience-item">
+
+                    <!-- Technical Skills Section -->
+                 <div class="technicalskills">
+                        <h2 id="technical">TECHNICAL TOOLS I'VE WORKED WITH
+                        </h2>
+                        <div class="skills-container">
+                            <div class="skills-img" id="java">
+                                <img src="img/java.png" class="skills-icons">
+                            </div>
+                            <div class="skills-img" id="python">
+                                <img src="img/python.png" class="skills-icons">
+                            </div>
+                            <div class="skills-img" id="SQL">
+                                <img src="img/SQL.png" class="skills-icons">
+                            </div>
+                            <div class="skills-img" id="html">
+                                <img src="img/html.png" class="skills-icons">
+                            </div>
+                            <div class="skills-img" id="css">
+                                <img src="img/css.png" class="skills-icons">
+                            </div>
+                            <div class="skills-img" id="github"> 
+                                <img src="img/github.png" class="skills-icons">
+                            </div>
+                            <div class="skills-img" id="jupiter"> 
+                                <img src="img/jupiter.png" class="skills-icons">
+                            </div>
+                            <div class="skills-img" id="linux"> 
+                                <img src="img/linux.svg" class="skills-icons">
+                            </div>
+                            <div class="skills-img" id="photoshop"> 
+                                <img src="img/photoshop.png" class="skills-icons">
+                            </div>
+                            <div class="skills-img" id="illustrator"> 
+                                <img src="img/illustrator.png" class="skills-icons">
+                            </div>
+
+                        </div>
+                    </div>
+
+                      <!-- Work Experience Section -->
+                      <div class="workclass">
+                        <h2 id="work">WORK</h2> 
+                            <div class="neulogo-container">
+                                <a href="https://www.khoury.northeastern.edu/"><img src="img/neu.png" class="neulogo">
+                                </a> 
+                                <div class="description">
+                                <p id="descriptionone">DS3000 Foundations of Data Science <br>
+                                CS2810 Mathematics of Data Models 
+                                 <br>Teaching Assistant
+                                </p>
+                                </div>
+                            </div>
+                            <!-- <div class="engineredlogo-container">
+                                <a href="https://enginereddesignagency.com/"><img src="img/enginered.png" class="engineredlogo">
+                                </a>
+                                <div class="description">
+                                    <p id="descriptiontwo">Designer
+                                    </p>
+                                    </div>
+                            </div> -->
+                     </div>
+                    </div>
+        </section>
+
+        <!-- Page 4: Projects Section -->
+        <section id= "projectpage">
+            <h1 class="heading" id="projectheading">PROJECTS</h1>
+            <div class = "project">
+                <div class="row">
+
+                    <!-- This is reversi project box-->
+                    <div class = "projectbox">
+                        <a href="#reversipopup"> <!-- reversipopup defined below-->
+                            <img id="reversibox" src="img/reversibox.png" class="project-boxes">
+                            <div class="overlay">
+                                <div class="overlayboxes">
+                                    <img id="reversioverlay" src="img/reversioverlay.png">
+                                </div> 
+                            </div>
+                        </a>
+                    </div>
+                    <!-- This is maze project box-->
+                    <div class="projectbox">
+                        <a href="#mazepopup"> <!--maze popup defined below-->
+                            <img id="mazebox" src="img/mazebox.png" class="project-boxes">
+                            <div class="overlay">
+                                <div class="overlayboxes">
+                                    <img id="mazeoverlay" src="img/mazeoverlay.png">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- This is strawberry project box-->
+                    <div class="projectbox">
+                        <a href="#strawberrypopup"> <!--strawberry popup defined below-->
+                            <img id="strawberrybox" src="img/strawberrybox.png" class="project-boxes">
+                            <div class="overlay">
+                                <div class="overlayboxes">
+                                    <img id="strawberryoverlay" src="img/strawberryoverlay.png">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- This is personal website project box-->
+                    <div class="projectbox">
+                        <a href="#personalpopup"> <!--personalpopup defined below-->
+                            <img id="personalbox" src="img/personalbox.png" class="project-boxes">
+                            <div class="overlay">
+                                <div class="overlayboxes">
+                                    <img id="personaloverlay" src="img/personaloverlay.png">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div> <!-- /row-->
+                <div class="githubbtn">
+                    <a href="https://github.com/joomee320" class="github">
+                        <button id="githublink">
+                            View Github for more
+                        </button>
+                    </a>
+                </div>
+            </div> <!-- /project-->
+        </section> <!--projectpage-->
+
+        <!-- Pop Up-->
+        <div class="popup" id="reversipopup">
+            <div class="popupcontents">
+                <div class="popupgif">
+                    <img src="gif/reversi.gif" alt="reversidemo" id="reversigif">
+                </div>
+                <div class="popuptext" id="">
+                <h1>REVERSI</h1>
+                <h2>JAVA</h2>
+                <p>Reversi is a Java-based desktop strategy board game featuring a hexagonal 
+                    grid for two players with black and white game pieces. The game includes 
+                    a sophisticated AI opponent and a user-friendly interface for human players.
+                    The AI employs a robust strategy pattern algorithm that adapts to and challenges 
+                    the human player's tactics throughout gameplay. Utilizing Java Swing, Reversi 
+                    offers a visually engaging game board with interactive black and white pieces, 
+                    ensuring an immersive and dynamic gaming experience.
+                </p>
+                </div>
+            <a class="closepopup" href="#projectpage">X</a>
+            </div>
+        </div>
+
+        <div class="popup" id="mazepopup">
+            <div class="popupcontents">
+                <div class="popupgif">
+                    <img src="gif/maze.gif" alt="mazedemo" id="mazegif">
+                </div>
+                <div class="popuptext">
+                <h1>MAZE GAME</h1>
+                <h2>JAVA</h2>
+                <p>Maze Game is a Java-developed game that incorporates Kruskal's algorithm 
+                    to generate a unique maze layout for each session, ensurng a non-reptitive 
+                    and engaging experience. MazeGame intgrates both breath-first search (BFS) 
+                    and depth-first search (DFS) algorithms, offering efficient solutions for 
+                    maze traversal and demonstrating advanced problem-solving techniques through 
+                    graphical representation. Users are allowed to press 'b' for BFS traversal 
+                    and 'd' for DFS traversal if they find the maze challenging.
+                </p>
+                </div>
+            <a class="closepopup" href="#projectpage">X</a>
+            </div>
+        </div>
+
+        <div class="popup" id="strawberrypopup">
+            <div class="popupcontents">
+                <div class="popupgif">
+                    <img src="gif/grabAStrawberry.gif" alt="strawberrygamedemo" id="strawberrygif">
+                </div>
+                <div class="popuptext">
+                <h1>GRAB A STRAWBERRY!</h1>
+                <h2>JAVA</h2>
+                <p>Grab A Strawberry is a Java-developed video game designed to captivate players 
+                    with its vibrant visuals and dynamic gameplay. The game centers around navigating 
+                    a maze filled with obstacles, all while racing against the clock to reach the goal—a delicious strawberry.
+                    Players control the character using the arrow keys, and the game provides clear, 
+                    visually engaging feedback. For example, when the character encounters an ice cube, 
+                    a freezing effect visibly emphasizes the obstacle, adding a layer of challenge to the 
+                    gameplay.
+                </p>
+                </div>
+            <a class="closepopup" href="#projectpage">X</a>
+            </div>
+        </div>
+
+        <div class="popup" id="personalpopup">
+            <div class="popupcontents">
+                <div class="popupgif">
+                    <img src="gif/web.gif" alt="personalwebdemo" id="webgif">
+                </div>
+                <div class="popuptext">
+                <h1>PERSONAL WEBSITE</h1>
+                <h2>HTML | CSS</h2>
+                <p>I developed a personal portfolio website using HTML and CSS to showcase my previous projects and 
+                    familiarize myself with new web development technologies. In addition, I designed my own logo and 
+                    established a personal brand identity. Leveraging tools like Adobe Photoshop and Canva, I created 
+                    various design elements, which allowed me to deepen my understanding of branding, particularly in 
+                    terms of color palettes and typefaces.
+                </p>
+                </div>
+            <a class="closepopup" href="#projectpage">X</a>
+            </div>
+        </div>
+
+        <section id="informationpage">
+            <div class="icons">
+                <div class="links">
+                    <a href="https://github.com/joomee320">
+                        <img src="img/github.svg" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/joomeechoi">
+                        <img src="img/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.instagram.com/joomeechoi/">
+                        <img src="img/insta.svg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector(".navbar"); // Selects the navbar
+            var bar = document.querySelector(".menu"); // Selects the menu
+            var burger = document.querySelector(".hamburger"); // Selects the hamburger menu (if any)
+            var mainLogo = document.getElementById("main-logo"); // Selects the main logo by ID
+            var secondLogo = document.getElementById("second-logo"); // Selects the second logo by ID
+    
+            // Toggles the "sticky" class based on the scroll position
+            var sticky = window.scrollY > 0;
+            header.classList.toggle("sticky", sticky);
+            bar.classList.toggle("sticky", sticky);
+            burger.classList.toggle("sticky", sticky);
+    
+            // Switch logos based on the scroll position
+            if (sticky) {
+                mainLogo.style.display = "none"; // Hide the original logo
+                secondLogo.style.display = "block"; // Show the second logo
+            } else {
+                mainLogo.style.display = "block"; // Show the original logo
+                secondLogo.style.display = "none"; // Hide the second logo
+            }
+        });
+    </script>
+    
+</body>
+
+</html>
+
+
+

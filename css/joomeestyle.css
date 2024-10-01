@@ -1,0 +1,642 @@
+@font-face {
+    font-family: garet;
+    src: url(font/garet-cufonfonts/Garet-Book.otf);
+}
+
+@font-face {
+    font-family: opensans;
+    src: url(font/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+} 
+  
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.main{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-color: #ede9dd;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: #ede9dd;
+    z-index: 1000; /* ensures it stays on top */
+    display: flex; /* Enables flexbox */
+    align-items: center; /* Vertically centers items */
+    padding: 0 100px; /* Adds padding to the sides */
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+    transition: background-color 0.3s ease, padding 0.3s ease; /* Smooth transition */
+
+}
+
+.icon {
+    margin-right: 20px; /* Space between the logo and the menu */
+}
+
+
+.logo{
+    width: 250px;
+    padding-top: 3px; 
+    transition: opacity 0.6s ease; 
+}
+
+.menu {
+    flex-grow: 1;
+    padding-right: 500px;
+    padding-bottom: 20px;
+}
+
+
+/* Sticky Navbar Styling */
+.navbar.sticky {
+    background-color:#d8849e; /* Changes background when sticky */
+}
+
+/* Sticky Menu and Hamburger Styles */
+.menu.sticky, .hamburger.sticky {
+    color: #d86141; /* Change text color in sticky state */
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end; /* Aligns menu items to the right */
+    align-items: center; /* Center the items vertically */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    /* float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+ul li{
+    list-style: none;
+    margin-left: 130px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #544013;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.1s ease-in-out;
+}
+
+ul li a:hover{
+    color: #fff;
+}
+
+
+
+.home {
+    width: auto;
+    background-color: #ede9dd;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    box-sizing: border-box;  
+    position:relative;
+    overflow:hidden;
+    margin: 0 auto;
+}
+
+.content {
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;  
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+#introduction {
+    font-size: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    text-decoration: none;
+    color: #544013;
+}
+
+#scroll {
+    font-size: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    text-decoration: none;
+    color: #544013;
+}
+
+/* Responsive design for different screen sizes */
+@media screen and (max-width: 1260px) {
+    .skills-icons { 
+        width: 55px;  
+        height: 55px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .skills-icons { 
+        width: 50px;  
+        height: 50px;
+    }
+}
+
+/* Styling for the About Me section */
+#aboutmepage {
+    width: 100%;
+    background-color: #ede9dd;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;  
+    position:relative;
+    overflow:hidden;
+    margin: 0 auto;
+    display: flex; /* Used flexbox to align the image and description horizontally */
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.aboutme {
+    display: flex; /* Ensures horizontal layout within aboutme */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /*Aligns content vertically*/
+    width: 80%; /* Ensures it doesn't take up the full width */
+    margin-bottom: 5%;
+    margin-top: 5%
+}
+
+/*Flexbox child: profile image */
+.profile { 
+    flex: 1; /* Allow image container to take up 30% of the width */
+}    
+
+.profile img.me {
+    width: 550px; 
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Flexbox child: description content */
+.description {
+    flex: 1; /* Allow the description to take up the rest of the space */
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 11%
+}
+
+/* Styling for the description text */
+.description .par {
+    text-align: left;
+    font-family: garet;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 22px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 1000px) {
+    #aboutmepage {
+        flex-direction: column; /* Stack image and description vertically on small screens */
+        align-items: center;
+    }
+
+    .profile {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+/* Styling for the Experience section */
+#experiencepage {
+    background-color: #ede9dd;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0 auto;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.experience {
+    width: inherit;  
+    height: inherit; 
+    padding-left: 5%;
+    padding-right:5%;
+    content: ""; 
+    position: relative;  
+}
+
+.heading  {
+    text-align: center;
+    font-family: Arial;
+    font-size: 35px;
+    color: #544013;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+
+h2 {
+    font-family: Arial;
+    font-size: 15px;
+    color: #544013;
+    margin-bottom: 60px;
+    text-align: center;
+    width: 48%; 
+}
+
+.experience-item {
+    width: 80%;
+    display: flex; /* Align work and technical horizontally */
+    justify-content: space-between; /* Ensure space between them */
+    align-items: flex-start; /* Aligns the content to the top */
+    margin-left: 100px;
+    margin-right: 70px;
+}
+
+.workclass {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1px;
+    margin-right: 50px;
+
+}
+
+.neulogo,
+.engineredlogo {
+    margin-top: 40px;
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Space between the image and the description */
+}
+
+.engineredlogo {
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+
+.description {
+    font-family: Arial;
+    font-size: 10px;
+    color: #544013;  
+    letter-spacing: 0.3px;
+    line-height: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+#descriptiontwo {
+    padding-top: 50px;
+}
+
+
+/* Technical Skills Section */
+.technicalskills {
+    position: relative;  
+    margin-top: 0;
+    margin-bottom: 8%;     
+    box-sizing: border-box; 
+    left: 2%;
+}
+
+
+.technicalskills .skills-container {
+    margin-top:  3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 20px;
+}
+
+.skills-icons{ 
+    width: 70px; 
+    z-index: 2; 
+    margin-right: 6vh; 
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}    
+
+
+.skills-icons:hover{  
+    transform: scale(1.2); /* Zoom in by 20% */
+    -webkit-filter: none;
+    filter: none;
+    }   
+
+@media only screen and (max-width: 1079px) {    
+} 
+
+@media screen and (max-width: 1260px) {
+    .skills-icons{ 
+        width:65px;  
+        }   
+} 
+@media screen and (max-width: 1200px) {
+    .skills-icons{ 
+        width:60px;  
+        }  
+}
+@media screen and (max-width: 1190px) {
+    .skills-icons{ 
+        width:54px;  
+        }   
+        .neulogo{
+            width :110;
+            height:110; 
+        }
+        .engineredlogo {
+            width: 110;
+        }
+} 
+
+
+/* Styling for the Project section */
+#projectpage {
+    height: 1300px;
+    background-color: #ede9dd;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0 auto;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+#projectheading {
+    margin-bottom: 80px;
+}
+
+/*Github link button class*/
+.githubbtn {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#githublink {
+    font-family: garet;
+    background-color: transparent; 
+    padding-top: 10px;  
+    padding-bottom: 32px;
+    text-align: center;  
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 20px; 
+    font-stretch: expanded;
+    border-color:#544013;
+    color:#544013;
+    border-style: solid;
+    display: flex; 
+    justify-content: center;
+    height: 10pt;    
+    position: relative;
+    transition: 0.3s ease-out; 
+}
+
+
+.project {
+    max-width: 1125px; /* Set a max width to prevent overflow */
+    margin: 0 auto; /* Center the content */
+    box-sizing: border-box;
+}
+
+
+.row { 
+    margin-top: 10px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 100px;
+} 
+
+
+/* Overlaying image*/
+
+.projectbox {
+    position: relative;
+    display: inline;
+    width: 500px; /* Ensure the box has the same size as the image */
+    height: auto;
+}
+
+
+.project-boxes {
+    width: 100%; /* Ensure the image takes up the entire box */
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0; /* This 0 value makes it fill the entire parent box */
+    bottom: 0;
+    width: 100%; /* This 100% makes the dimension to match parent box */
+    height: 100%;
+    opacity: 0; /* Start hidden */
+    transition: .3s ease;
+    /* As overlay elements are images, use flexbox to make aligning better */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlayboxes img{
+    width: 100%; /* Make the overlay image the same size as the box */
+} 
+
+.projectbox:hover .overlay{ 
+    opacity: 1;
+    transition: ease-out 0.3s;   
+}   
+
+.project-boxes:hover{ 
+opacity: 1;
+transition: ease-out 0.3s;     
+}  
+
+@media screen and (max-width: 768px) {
+    .row {
+        grid-template-columns: 1fr; /* Display project boxes in a single column */
+        column-gap: 50px;
+    }
+
+    .projectbox {
+        width: 100%; /* Make project boxes full width */
+    }
+
+    .overlay {
+        height: auto; /* Ensure overlay image adjusts as well */
+    }
+}
+
+
+
+/* Styling for the Project Pop Up Text */
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popupcontents {
+    background-color: #ede9dd;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.popupgif img {
+    width: 200px;
+    max-width: 500px;
+    height: auto;
+    display: flex;
+}
+
+.popupgif #reversigif {
+    margin-top: 20px;
+    width: 400px;
+    margin-left: 50px;
+}
+
+.popupgif #mazegif {
+    margin-top: 20px;
+    width: 200px;
+    margin-left: 150px;
+}
+
+.popupgif #strawberrygif {
+    margin-top: 10px;
+    width: 200px;
+    margin-left: 150px;
+}
+
+.popupgif #webgif {
+    margin-top: 10px;
+    width: 430px;
+    margin-left: 30px;
+
+}
+
+.popuptext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+    padding: 20px;
+}
+
+.popuptext h1 {
+    font-size: 25px;
+    color:#453711
+}
+
+.popuptext h2 {
+    text-align: right;
+    margin-left: 230px; /* To have ex. "JAVA" on the very left*/
+    margin-top: 4px;
+}
+
+.popuptext p {
+    font-size: 15px;
+    font-family: garet;
+    text-align: justify;
+    color:#453711;
+    letter-spacing: 0.3px;
+    line-height: 20px;
+    margin-top: -50px;
+}
+
+.closepopup {
+    font-family: opensans;
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    background-color: #544013;
+    color: #ede9dd;
+    cursor: pointer;
+}
+
+/* When each #popup is active, show the popup */
+#reversipopup:target,
+#mazepopup:target,
+#strawberrypopup:target,
+#personalpopup:target {
+    display: flex; /* Show the popup */
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+@media screen and (max-width: 768px) {
+    .projectbox:hover .overlay {
+        opacity: 1; /* Always show overlay on mobile without hover */
+    }
+}
+
+/* Styling for the Experience section */
+#informationpage {
+    background-color: #d8849e;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    margin: 0 auto;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adds space between the icons */
+}
+
+.links img {
+    width: 40px;
+    height: 40px;
+}
